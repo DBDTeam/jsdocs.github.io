@@ -183,7 +183,11 @@ class Message extends Base {
 
         return x
     }
-    
+    /**
+     * 
+     * @param {object} obj - Edits the message (Only if the message author is the client)
+     * @returns {Message}
+     */
     async edit(obj) {
         const message = new EditMessagePayload(obj, obj.files)
 
@@ -199,7 +203,11 @@ class Message extends Base {
 
         return x
     }
-    
+    /**
+     * 
+     * @param {} - Remove the embeds of the message
+     * @returns {Message}
+     */
     async removeEmbeds() {
         var result = await this.#client.rest.request("PATCH", Endpoints.ChannelMessage(this.channelId, this.id), true, { data: { flags: 4} })
             
@@ -213,13 +221,20 @@ class Message extends Base {
 
         return x
     }
-    
+    /**
+     * 
+     * @param {}  - Deletes the message
+     * @returns {Message}
+     */
     async delete() {
         var result = await this.#client.rest.request("DELETE", Endpoints.ChannelMessage(this.channelId, this.id), true)
             
         return result
     }
-    
+    /**
+     * @type {User}
+     * @returns - The author of the message
+     */
     get user() {
         if(this.webhookId){
             return data.user
