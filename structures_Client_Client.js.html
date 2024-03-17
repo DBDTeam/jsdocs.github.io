@@ -7,7 +7,7 @@ const { ClientPresence } = require("./ClientPresence.js")
 const { readOnly } = require("../../Utils/utils.js");
 const { ChannelManager } = require('../Managers/ChannelManager.js');
 const { GuildManager } = require("../Managers/GuildManager.js");
-const { UserManager } = require('../Managers/UserManager.js');
+const { UserManager } = require('../Managers/UserManager');
 const { REST } = require('../../REST/REST.js');
 
 class Client extends EventEmitter {
@@ -108,6 +108,10 @@ class Client extends EventEmitter {
     }
     /**
      * Establish the connection with the proyect to the WS
+     * @example
+     * const client = new Client({ token: `TOKEN`, intents: IntentsHere })
+     * 
+     * client.connect()
      */
     connect() {
         this.shardManager.connect();
