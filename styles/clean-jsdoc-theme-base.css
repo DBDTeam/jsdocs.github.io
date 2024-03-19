@@ -34,13 +34,13 @@ body {
 }
 
 body {
-    font-family: 'body';
+    font-family: 'Karla', sans-serif;
     overflow-x: hidden;
     position: relative;
 }
 
 b {
-    font-family: heading;
+    font-family: 'Karla', sans-serif;
 }
 
 h1,
@@ -49,7 +49,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'heading';
+    font-family: 'Karla', sans-serif;
     font-weight: normal;
     line-height: 1.75;
 }
@@ -140,11 +140,11 @@ article ul p {
 }
 
 .signature {
-    font-family: 'code';
+    font-family: 'Karla', sans-serif;
 }
 
 .name {
-    font-family: 'code';
+    font-family: 'Karla', sans-serif;
     font-weight: bold;
 }
 
@@ -166,7 +166,7 @@ blockquote {
 }
 
 dt {
-    font-family: heading;
+    font-family: 'Karla', sans-serif;
 }
 
 .details dt {
@@ -285,7 +285,7 @@ table th,
 .params .name,
 .props .name,
 .name code {
-    font-family: 'code';
+    font-family: 'Karla', sans-serif;
     font-size: 1rem;
 }
 
@@ -338,13 +338,13 @@ dl.param-type {
 }
 
 .param-type dd {
-    font-family: 'code';
+    font-family: 'Karla', sans-serif;
     font-size: 1rem;
 }
 
 code {
     border-radius: 0.3rem;
-    font-family: 'code';
+    font-family: 'Karla', sans-serif;
     font-size: 1rem;
     padding: 0.1rem 0.4rem;
 }
@@ -391,7 +391,7 @@ code {
     padding: 0 2rem;
     text-decoration: none;
     font-size: 1.5rem;
-    font-family: heading;
+    font-family: 'Karla', sans-serif;
 }
 
 .sidebar-title:hover {
@@ -407,7 +407,7 @@ code {
 
 .sidebar-section-title {
     padding: 0.5rem 2rem;
-    font-family: heading;
+    font-family: 'Karla', sans-serif;
     font-size: 1.25rem;
     border-radius: 1rem;
 }
@@ -492,7 +492,7 @@ code {
 }
 
 .toc-link.is-active-link {
-    font-family: heading;
+    font-family: 'Karla', sans-serif;
 }
 
 .has-anchor {
@@ -690,7 +690,7 @@ pre {
 }
 
 .code-lang-name {
-    font-family: 'body';
+    font-family: 'Karla', sans-serif;
     font-size: 0.75rem;
 }
 
@@ -715,7 +715,7 @@ pre {
 }
 
 .bold {
-    font-family: heading;
+    font-family: 'Karla', sans-serif;
 }
 
 .search-container {
@@ -777,7 +777,7 @@ pre {
     width: 100%;
     flex: 1;
     padding: 1rem 2rem 1rem 4rem;
-    font-family: body;
+    font-family: 'Karla', sans-serif;
     font-size: 1.25rem;
 }
 
@@ -798,7 +798,7 @@ pre {
 }
 
 .search-result-item-title {
-    font-family: heading;
+    font-family: 'Karla', sans-serif;
     font-size: 1.5rem;
     margin: 0;
 }
